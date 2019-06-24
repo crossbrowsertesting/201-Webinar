@@ -5,17 +5,16 @@ import time
 driver = None
 try:
 	# driver = webdriver.Chrome()
-	username = "tonyprod2000@gmail.com"
+	username = "johnreese.vt@gmail.com"
 	authkey  = ""
 
 	caps = {}
 
 	caps['name'] = "Testing - " + time.ctime()
-	caps['browser_api_name'] = 'Chrome50'
-	caps['os_api_name'] = 'WinVista-C2'
-	caps['screen_resolution'] = '1024x768'
+	caps['browser'] = 'chrome'
+	caps['version'] = 'latest'
+	caps['platform'] = 'windows'
 	caps['record_video'] = 'true'
-	caps['record_network'] = 'false'
 
 	# connect here
 	driver = webdriver.Remote(

@@ -9,5 +9,5 @@ e = driver.find_element_by_name("q")
 print e
 e.send_keys("cross browser testing")
 
-time.sleep(3)
+time.sleep(2)
 driver.quit()
