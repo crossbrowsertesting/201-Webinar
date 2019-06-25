@@ -23,21 +23,24 @@ driver.get("https://card-layout.glitch.me/")
 
 # browser nav actions
 driver.back()
+time.sleep(1)
 driver.forward()
+time.sleep(1)
 driver.refresh()
+time.sleep(1)
 
 print "setting size + pos"
-driver.set_window_rect(0, 0, 325, 900)
+driver.set_window_size(325, 900)
 time.sleep(1)
 
-driver.set_window_rect(0, 0, 768, 800)
+driver.set_window_size(768, 800)
 time.sleep(1)
 
-driver.set_window_rect(0, 0, 1024, 800)
+driver.set_window_size(1024, 800)
 time.sleep(1)
 
 for i in range(325, 1300, 50):
-    driver.set_window_rect(0, 0, i, 800)
+    driver.set_window_size(i, 800)
 
 time.sleep(2)
 
