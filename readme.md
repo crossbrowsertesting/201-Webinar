@@ -1,7 +1,4 @@
-# CrossBrowserTesting 201 Webinar -- Getting Started with Selenium
-Examples used in the 201 Webinar on Jun 25 2019
-
----
+# CrossBrowserTesting 201 Webinar: Getting Started with Selenium
 
 ## Setup
 To run the examples, you will need 
@@ -32,3 +29,6 @@ Once everything is installed, running the examples is simple:
 ```
 python 1-webdriver.py
 ```
+
+## Questions? Comments? Problems?
+If you encounter any issues or have any questions or suggestions, please open an issue in this repo and we'll get back to you.
