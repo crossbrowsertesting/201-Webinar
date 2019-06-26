@@ -6,7 +6,7 @@ import time
 
 # Create the webdriver instance
 # run test locally against chrome
-driver = webdriver.Chrome('../webdrivers/chromedriver')
+driver = webdriver.Chrome("./webdrivers/chromedriver")
 
 # navigate
 driver.get("http://crossbrowsertesting.github.io/login-form.html")
@@ -17,7 +17,7 @@ password = driver.find_element_by_id('password')
 login = driver.find_element_by_id('submit')
 
 username.send_keys('tester@crossbrowsertesting.com')
-password.send_keys('test123')
+password.send_keys('test1234')
 login.click()
 
 # selenium needs to wait for the login to finish before checking
@@ -27,9 +27,12 @@ login.click()
 # driver.implicitly_wait(10)
 # logged_in_message = driver.find_element_by_id('logged-in')
 
+
 # ... or use an explicit wait
-logged_in_message = WebDriverWait(driver, 10).until(
+logged_in_message = WebDriverWait(driver, 4).until(
         EC.presence_of_element_located((By.ID, "logged-in")))
+
+print logged_in_message.text
 
 raw_input('press enter to quit')
 

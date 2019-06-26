@@ -6,7 +6,7 @@ import time
 
 # Create the webdriver instance
 # run test locally against chrome
-driver = webdriver.Chrome('../webdrivers/chromedriver')
+driver = webdriver.Chrome("./webdrivers/chromedriver")
 
 # navigate
 driver.get("http://crossbrowsertesting.github.io/login-form.html")
@@ -40,6 +40,8 @@ try:
 
 except AssertionError:
     print "FAIL: did not log in!"
+
+raw_input()
 
 driver.quit()
 

@@ -3,7 +3,7 @@ import time
 
 # Create the webdriver instance
 # run test locally against chrome
-driver = webdriver.Chrome()
+driver = webdriver.Chrome("./webdrivers/chromedriver")
 
 
 # run test in CBT:
